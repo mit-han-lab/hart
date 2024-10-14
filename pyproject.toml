@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hart"
+version = "1.0.0"
+description = "HART: Efficient Visual Generation with Hybrid Autoregressive Transformer"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "torch==2.3.0", "torchvision==0.18.0",
+    "transformers==4.42.2", "tokenizers>=0.15.2", "sentencepiece==0.2.0", "shortuuid",
+    "accelerate==0.27.2", "pydantic==2.2.0", "markdown2[all]", "numpy==1.26.4",
+    "scikit-learn==1.2.2", "gradio==4.44.1", "gradio_client==1.3.0",
+    "requests", "httpx==0.24.1", "uvicorn", "fastapi==0.101.1",
+    "einops==0.6.1", "einops-exts==0.0.4", "timm==0.9.12",
+    "openpyxl==3.1.2", "datasets==2.16.1", "webdataset==0.2.86",
+    "nltk==3.3", "pywsd==1.2.4", "opencv-python==4.8.0.74",
+    "omegaconf==2.3.0", "diffusers==0.28.2",
+    "einx", "wandb", "xformers==0.0.26.post1",
+    "spaces==0.30.3", "pre-commit==4.0.1", "black==24.10.0", "isort==5.13.2",
+]
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.isort]
+profile = "black"
