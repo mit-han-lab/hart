@@ -25,13 +25,14 @@ from hart.utils import default_prompts, encode_prompts, llm_system_prompt, safet
 
 DESCRIPTION = (
     """# HART: Efficient Visual Generation with Hybrid Autoregressive Transformer"""
+    + """\n[\\[Paper\\]](https://www.dropbox.com/scl/fi/uuow1kigjbp56ps7r9cfn/hart_arxiv.pdf?rlkey=as6fnbscsf62mqjfp6zl0j9k7&st=uae3u4ox&dl=0) [\\[Project\\]](https://hanlab.mit.edu/projects/hart) [\\[GitHub\\]](https://github.com/mit-han-lab/hart)"""
     + """\n<p>Note: We will replace unsafe prompts with a default prompt: \"A red heart.\"</p>"""
 )
 if not torch.cuda.is_available():
     DESCRIPTION += "\n<p>Running on CPU 🥶 This demo may not work on CPU.</p>"
 
 MAX_SEED = np.iinfo(np.int32).max
-CACHE_EXAMPLES = torch.cuda.is_available() and os.getenv("CACHE_EXAMPLES", "1") == "1"
+CACHE_EXAMPLES = torch.cuda.is_available() and os.getenv("CACHE_EXAMPLES", "0") == "1"
 MAX_IMAGE_SIZE = int(os.getenv("MAX_IMAGE_SIZE", "1024"))
 USE_TORCH_COMPILE = os.getenv("USE_TORCH_COMPILE", "0") == "1"
 ENABLE_CPU_OFFLOAD = os.getenv("ENABLE_CPU_OFFLOAD", "0") == "1"
