@@ -1,6 +1,6 @@
 # HART: Efficient Visual Generation with Hybrid Autoregressive Transformer
 
-\[[Paper](https://www.dropbox.com/scl/fi/uuow1kigjbp56ps7r9cfn/hart_arxiv.pdf?rlkey=as6fnbscsf62mqjfp6zl0j9k7&st=rexoslkf&dl=0)\] \[[Demo](https://hart.mit.edu)\] \[[Project](https://hanlab.mit.edu/projects/hart)\]
+\[[Paper](https://arxiv.org/abs/2410.10812)\] \[[Demo](https://hart.mit.edu)\] \[[Project](https://hanlab.mit.edu/projects/hart)\]
 
 ![teaser_Page1](assets/teaser.jpg)
 

@@ -25,7 +25,7 @@ from hart.utils import default_prompts, encode_prompts, llm_system_prompt, safet
 
 DESCRIPTION = (
     """# HART: Efficient Visual Generation with Hybrid Autoregressive Transformer"""
-    + """\n[\\[Paper\\]](https://www.dropbox.com/scl/fi/uuow1kigjbp56ps7r9cfn/hart_arxiv.pdf?rlkey=as6fnbscsf62mqjfp6zl0j9k7&st=uae3u4ox&dl=0) [\\[Project\\]](https://hanlab.mit.edu/projects/hart) [\\[GitHub\\]](https://github.com/mit-han-lab/hart)"""
+    + """\n[\\[Paper\\]](https://arxiv.org/abs/2410.10812) [\\[Project\\]](https://hanlab.mit.edu/projects/hart) [\\[GitHub\\]](https://github.com/mit-han-lab/hart)"""
     + """\n<p>Note: We will replace unsafe prompts with a default prompt: \"A red heart.\"</p>"""
 )
 if not torch.cuda.is_available():
