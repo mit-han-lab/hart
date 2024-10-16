@@ -75,7 +75,7 @@ python sample.py --model_path /path/to/model \
 2. Sampling with multiple prompts:
 
 ```bash
-# You can add --store_seperately to store each image individually, otherwise images will be stored in one grid.
+# You can add --store_separately to store each image individually, otherwise images will be stored in one grid.
 python sample.py --model_path /path/to/model \
    --text_model_path /path/to/Qwen2 \
    --prompt_list [Prompt1, Prompt2, ..., PromptN] \
