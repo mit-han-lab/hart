@@ -1,11 +1,12 @@
 # HART: Efficient Visual Generation with Hybrid Autoregressive Transformer
 
-\[[Paper](https://arxiv.org/abs/2410.10812)\] \[[Demo](https://hart.mit.edu)\] \[[Project](https://hanlab.mit.edu/projects/hart)\]
+\[[Paper](https://arxiv.org/abs/2410.10812)\] \[[Demo](https://hart.mit.edu)\] \[[Project](https://hanlab.mit.edu/projects/hart)\] \[[Replicate Demo & API](https://replicate.com/chenxwh/hart)\]
 
 ![teaser_Page1](assets/teaser.jpg)
 
 ## News
 
+- \[2024/10\] 🔥 Added the Replicate Demo and API [![Replicate](https://replicate.com/chenxwh/hart/badge)](https://replicate.com/chenxwh/hart)!
 - \[2024/10\] 🔥 We open source the inference code and [Gradio demo](https://hart.mit.edu) for HART!
 
 ## Abstract
