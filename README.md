@@ -53,7 +53,7 @@ Note: We use ShieldGemma-2B from Google DeepMind to filter out unsafe prompts in
 You may launch the Gradio demo using the following script:
 
 ```bash
-python app.py ---model_path /path/to/model \
+python app.py --model_path /path/to/model \
    --text_model_path /path/to/Qwen2 \
    --shield_model_path /path/to/ShieldGemma2B 
 ```
